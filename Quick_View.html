@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick view</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+</head>
+
+<body>
+<header class="header">
+
+    <section class="flex">
+
+        <!-- NAVBAR BEGIN -->
+
+        <div class="logo-nav">
+            <!-- <a href="home.php" class="logo"> -->
+            <img src="./Assets/LogoChukoManga5.png">
+            <span>CHUKO MANGA</span>
+            <!-- </a> -->
+        </div>
+
+
+
+        <nav class="navbar">
+
+            <a href="#">Se Connecter</a>
+            <a href="">S'inscrire</a>
+            <a href="">Vendre</a>
+            <a href="">Contact</a>
+
+        </nav>
+
+        <div class="icons">
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!-- <a href="search_page.php"><i class="fas fa-search"></i>Search</a>
+                <a href="wishlist.php"><i class="fas fa-heart"></i><span></span></a> -->
+            <a href="cart.php"><i class="fas fa-shopping-cart"></i><span></span></a>
+            <div id="user-btn" class="fas fa-user"></div>
+        </div>
+
+        <div class="profile">
+
+            <p>LOGIN/INSCRIPTION</p>
+            <a href="update_user.php" class="btn">Update Profile.</a>
+            <div class="flex-btn">
+                <a href="user_register.php" class="option-btn">Register.</a>
+                <a href="user_login.php" class="option-btn">Login.</a>
+            </div>
+            <a href="components/user_logout.php" class="delete-btn">logout</a>
+
+            <p>Please Login Or Register First to proceed !</p>
+            <div class="flex-btn">
+                <a href="user_register.php" class="option-btn">Register</a>
+                <a href="user_login.php" class="option-btn">Login</a>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- NAVBAR END -->
+
+    </section>
+
+</header>
+
+
+    <section class="quick-view">
+
+        <!-- <h1 class="heading">Quick view</h1> -->
+        <div class="banner">
+            <img src="./Assets/images/bannierechuko3.png" alt="Banner Image">
+            <div class="category_title heading">Category Name</div>
+            </div>
+<!-- DEBUT FORM QUI RECUPERE LES INFORMATIONS DU POST DANS LA BDD -->
+        <form action="" method="post" class="box">
+            <input type="hidden" name="pid" value="">
+            <input type="hidden" name="name" value="">
+            <input type="hidden" name="price" value="">
+            <input type="hidden" name="image" value="">
+            <div class="row">
+                <div class="image-container">
+                    <div class="main-image">
+                        <img src="./Assets/images/9782344048078-001-T.jpeg" alt="">
+                    </div>
+                    <div class="sub-image">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="name">
+                     Titre de l'annonce
+                    </div>
+                    <div class="flex">
+                        <div class="price"><span>Prix </span>
+                          <span>€</span>
+                        </div>
+                   
+                    </div>
+                    <div class="details">
+                      description
+                      <div class="product_state">
+                        <span>Etat : </span>
+                        <span>Neuf</span>
+                    </div>
+                    <div class="product_edition">
+                        <span>Edition : </span>
+                        <span>Kana</span>
+                    </div>
+                    <div class="product_seller">
+                        Vendeur : Nom Vendeur
+
+                      </div>
+                    </div>
+                    <div class="flex-btn">
+                        <input type="submit" value="AJOUTER AU PANIER" class="btn" name="add_to_cart" >
+                        </div>
+                   
+                <div class="product_resume">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, porro.
+                    </p>
+                </div>
+
+                </div>
+            </div>
+        </form>
+
+        <!-- FIN FORM QUI RECUPERE LES INFORMATIONS DU POST DANS LA BDD -->
+
+        <!-- Balise p en display si rien à été ajouté au panier -->
+   <p class="empty">Panier vide</p>
+   
+
+
+    </section>
+    <footer class="footer">
+    
+        <section class="grid">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.php"> <i class="fas fa-angle-right"></i> Home</a>
+                <a href="about.php"> <i class="fas fa-angle-right"></i> About</a>
+                <a href="shop.php"> <i class="fas fa-angle-right"></i> Categories</a>
+                <a href="contact.php"> <i class="fas fa-angle-right"></i> Contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="user_login.php"> <i class="fas fa-angle-right"></i> Login</a>
+                <a href="user_register.php"> <i class="fas fa-angle-right"></i> Register</a>
+                <a href="cart.php"> <i class="fas fa-angle-right"></i> Cart</a>
+                <a href="orders.php"> <i class="fas fa-angle-right"></i> Orders</a>
+            </div>
+    
+            <div class="box">
+                <h3>Contact Us.</h3>
+                <a href="tel:9800000000"><i class="fas fa-phone"></i> +977 980 000 0000</a>
+    
+                <a href="mailto:harshchy143@gmail.com"><i class="fas fa-envelope"></i> testemail@gmail.com</a>
+                <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> Saint Etienne, France </a>
+            </div>
+    
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/harshchaudharynp" target="_blank"><i
+                        class="fab fa-facebook-f"></i>facebook</a>
+                <a href="https://twitter.com/HarshCh53587355" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com/harshchy__/" target="_blank"><i
+                        class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.linkedin.com/in/harsh-chaudhary-15763a150/" target="_blank"><i
+                        class="fab fa-linkedin"></i>Linkedin</a>
+            </div>
+    
+        </section>
+    
+        <div class="credit">&copy; copyright @
+            <?= date('Y'); ?> by <span>AKNL</span> | all rights reserved!
+        </div>
+    
+    </footer>
+    
+    <script src="./Assets/js/script.js"></script>
+    
+    </body>
+    
+    </html>
