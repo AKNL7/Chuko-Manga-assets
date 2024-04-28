@@ -18,18 +18,22 @@
 </head>
 
 <body>
+
+    <!-- HEADER BEGIN -->
     <header class="header">
-    
+
         <section class="flex">
 
-    <div class="logo-nav">
-          <!-- <a href="home.php" class="logo"> -->
-        <img src="./Assets/LogoChukoManga5.png">
-      <span>CHUKO MANGA</span>
-        <!-- </a> -->
-    </div>   
-    
-     
+            <!-- NAVBAR BEGIN -->
+
+            <div class="logo-nav">
+                <!-- <a href="home.php" class="logo"> -->
+                <img src="./Assets/LogoChukoManga5.png">
+                <span>CHUKO MANGA</span>
+                <!-- </a> -->
+            </div>
+
+
 
             <nav class="navbar">
 
@@ -37,49 +41,52 @@
                 <a href="">S'inscrire</a>
                 <a href="">Vendre</a>
                 <a href="">Contact</a>
-               
+
             </nav>
-    
+
             <div class="icons">
-    
+
                 <div id="menu-btn" class="fas fa-bars"></div>
                 <!-- <a href="search_page.php"><i class="fas fa-search"></i>Search</a>
                 <a href="wishlist.php"><i class="fas fa-heart"></i><span></span></a> -->
                 <a href="cart.php"><i class="fas fa-shopping-cart"></i><span></span></a>
                 <div id="user-btn" class="fas fa-user"></div>
             </div>
-    
+
             <div class="profile">
-    
-                <p>name></p>
+
+                <p>LOGIN/INSCRIPTION</p>
                 <a href="update_user.php" class="btn">Update Profile.</a>
                 <div class="flex-btn">
                     <a href="user_register.php" class="option-btn">Register.</a>
                     <a href="user_login.php" class="option-btn">Login.</a>
                 </div>
                 <a href="components/user_logout.php" class="delete-btn">logout</a>
-             
+
                 <p>Please Login Or Register First to proceed !</p>
                 <div class="flex-btn">
                     <a href="user_register.php" class="option-btn">Register</a>
                     <a href="user_login.php" class="option-btn">Login</a>
                 </div>
-    
-    
-    
-    
-    
+
+
+
+
+
             </div>
-    
+            <!-- NAVBAR END -->
+
         </section>
-    
+
     </header>
+    <!-- HEADER END -->
 
-    
-
+    <!-- HOME CAROUSEL BEGIN -->
     <div class="home-bg">
 
         <section class="home">
+
+            <!-- SWIPER HOME BEGIN -->
 
             <div class="swiper home-slider">
 
@@ -87,34 +94,34 @@
 
                     <div class="swiper-slide slide">
                         <div class="image">
-                            <img src="images/home-img-1.png" alt="">
+                            <img src="./Assets/images/bannierechukomanga2.png" alt="">
                         </div>
                         <div class="content">
                             <span></span>
-                            <h3></h3>
+                            <h3>Chuko Manga</h3>
                             <!-- <a href="category.php?category=smartphone" class="btn">Shop Now</a> -->
                         </div>
                     </div>
 
                     <div class="swiper-slide slide">
                         <div class="image">
-                            <img src="images/home-img-2.png" alt="">
+                            <img src="./Assets/images/bannierechuko4.png" alt="">
                         </div>
                         <div class="content">
-                            <span>Upto 50% off</span>
-                            <h3>Latest Watches</h3>
-                            <a href="category.php?category=watch" class="btn">Shop Now.</a>
+                            <span>Lorem, ipsum dolor.</span>
+                            <h3>Lorem, ipsum.</h3>
+                            <a href="category.php?category=watch" class="btn">Voir Les Catégories</a>
                         </div>
                     </div>
 
                     <div class="swiper-slide slide">
                         <div class="image">
-                            <img src="images/home-img-3.png" alt="">
+                            <img src="./Assets/images/bannierechuko6.png" alt="">
                         </div>
                         <div class="content">
-                            <span>upto 50% off</span>
-                            <h3>Latest headsets</h3>
-                            <a href="shop.php" class="btn">Shop Now.</a>
+                            <span>Lorem, ipsum dolor.</span>
+                            <h3>Lorem, ipsum.</h3>
+                            <a href="shop.php" class="btn">Contact</a>
                         </div>
                     </div>
 
@@ -122,46 +129,52 @@
 
                 <div class="swiper-pagination"></div>
 
+                <!-- SWIPER HOME END   -->
+
             </div>
 
         </section>
 
-    </div>
 
+    </div>
+    <!-- HOME CAROUSEL END -->
+
+    <!-- CATEGORY BEGIN -->
     <section class="category">
 
-        <h1 class="heading">Shop by Category</h1>
-
+        <h1 class="heading">NOS CATEGORIES</h1>
+ 
+        <!-- CATEGORY CAROUSEL BEGIN -->
         <div class="swiper category-slider">
 
             <div class="swiper-wrapper">
 
                 <a href="category.php?category=laptop" class="swiper-slide slide">
                     <img src="images/icon-1.png" alt="">
-                    <h3>Laptop</h3>
+                    <h3>NAMEK'S PLANET</h3>
                 </a>
 
                 <a href="category.php?category=tv" class="swiper-slide slide">
                     <img src="images/icon-2.png" alt="">
-                    <h3>Television</h3>
+                    <h3>KONOHA'S VILLAGE</h3>
                 </a>
 
                 <a href="category.php?category=camera" class="swiper-slide slide">
                     <img src="images/icon-3.png" alt="">
-                    <h3>Camera</h3>
+                    <h3>TRIP TO GRAND LINE</h3>
                 </a>
 
                 <a href="category.php?category=mouse" class="swiper-slide slide">
                     <img src="images/icon-4.png" alt="">
-                    <h3>Mouse</h3>
+                    <h3>AWAY INSIDE THE WALL</h3>
                 </a>
 
                 <a href="category.php?category=fridge" class="swiper-slide slide">
                     <img src="images/icon-5.png" alt="">
-                    <h3>Fridge</h3>
+                    <h3>THE GREAT BERSERKER</h3>
                 </a>
 
-                <a href="category.php?category=washing" class="swiper-slide slide">
+                <!-- <a href="category.php?category=washing" class="swiper-slide slide">
                     <img src="images/icon-6.png" alt="">
                     <h3>Washing machine</h3>
                 </a>
@@ -174,25 +187,28 @@
                 <a href="category.php?category=watch" class="swiper-slide slide">
                     <img src="images/icon-8.png" alt="">
                     <h3>Watch</h3>
-                </a>
+                </a> -->
 
             </div>
 
             <div class="swiper-pagination"></div>
 
         </div>
-
+        <!-- CATEGORY CAROUSEL END -->
     </section>
+
+    <!-- RECENT POST SECTION BEGIN -->
 
     <section class="home-products">
 
-        <h1 class="heading">Latest products</h1>
+        <h1 class="heading">Les Derniéres Annonces</h1>
 
+        <!-- SLIDER RECENT POST BEGIN -->
         <div class="swiper products-slider">
 
             <div class="swiper-wrapper">
 
-  
+
                 <form action="" method="post" class="swiper-slide slide">
                     <input type="hidden" name="pid" value="">
                     <input type="hidden" name="name" value="">
@@ -200,43 +216,92 @@
                     <input type="hidden" name="image" value="">
                     <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
                     <a href="" class="fas fa-eye"></a>
-                    <img src="" alt="">
+                    <img src="./Assets/images/9782382754665_1_75.jpg" alt="">
                     <div class="name">
-                       name
+                       Titre de l'annonce
                     </div>
                     <div class="flex">
-                        <div class="price"><span>Nrs.</span>
-                          <span>/-</span>
-                        </div>
-                        <input type="number" name="qty" class="qty" min="1" max="99"
-                           >
-                    </div>
+                        <div class="price"><span>PRIX</span>
+                            <span>€</span>
+                            <!-- NUMER QUANTITY INPUT DELETE -->
+                        <!-- </div>
+                        <input type="number" name="qty" class="qty" min="1" max="99">
+                    </div> -->
                     <input type="submit" value="add to cart" class="btn" name="add_to_cart">
                 </form>
-             
-   <p class="empty">no products added yet!</p>';
-   
+
+                <!-- <p class="empty">no products added yet!</p>'; -->
+
 
             </div>
 
             <div class="swiper-pagination"></div>
 
         </div>
+        <!-- SLIDER RECENT POST END -->
 
     </section>
 
+    <!-- BEST PRICE POST HOME SECTION BEGIN -->
+
+    <section class="home-products">
+
+        <h1 class="heading">Les Meilleurs Prix</h1>
+
+        <!-- SLIDER POST BEGIN -->
+        <div class="swiper products-slider">
+
+            <div class="swiper-wrapper">
+
+
+                <form action="" method="post" class="swiper-slide slide">
+                    <input type="hidden" name="pid" value="">
+                    <input type="hidden" name="name" value="">
+                    <input type="hidden" name="price" value="">
+                    <input type="hidden" name="image" value="">
+                    <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                    <a href="" class="fas fa-eye"></a>
+                    <img src="./Assets/images/9782344048078-001-T.jpeg" alt="">
+                    <div class="name">
+                        Titre de l'annonce
+                    </div>
+                    <div class="flex">
+                        <div class="price"><span>PRIX</span>
+                            <span>€</span>
+                            
+                        <!-- </div>
+                        <input type="number" name="qty" class="qty" min="1" max="99">
+                    </div> -->
+                    <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+                </form>
+
+                <!-- <p class="empty">no products added yet!</p>'; -->
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <!-- SLIDER POST END -->
+       
+    </section>
+    <!-- BEST PRICE SECTION END -->
+
+    <!-- FOOTER BEGIN  -->
+
     <footer class="footer">
-    
+
         <section class="grid">
-    
+
             <div class="box">
                 <h3>Quick links</h3>
                 <a href="home.php"> <i class="fas fa-angle-right"></i> Home</a>
                 <a href="about.php"> <i class="fas fa-angle-right"></i> About</a>
-                <a href="shop.php"> <i class="fas fa-angle-right"></i> Shop</a>
+                <a href="shop.php"> <i class="fas fa-angle-right"></i> Categories</a>
                 <a href="contact.php"> <i class="fas fa-angle-right"></i> Contact</a>
             </div>
-    
+
             <div class="box">
                 <h3>Extra links</h3>
                 <a href="user_login.php"> <i class="fas fa-angle-right"></i> Login</a>
@@ -244,15 +309,15 @@
                 <a href="cart.php"> <i class="fas fa-angle-right"></i> Cart</a>
                 <a href="orders.php"> <i class="fas fa-angle-right"></i> Orders</a>
             </div>
-    
+
             <div class="box">
                 <h3>Contact Us.</h3>
                 <a href="tel:9800000000"><i class="fas fa-phone"></i> +977 980 000 0000</a>
-                <a href="tel:9900000000"><i class="fas fa-phone"></i> +977 974 000 0000</a>
-                <a href="mailto:harshchy143@gmail.com"><i class="fas fa-envelope"></i> harsh.221715@ncit.edu.np</a>
-                <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal </a>
+                
+                <a href="mailto:harshchy143@gmail.com"><i class="fas fa-envelope"></i> testemail@gmail.com</a>
+                <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> Saint Etienne, France </a>
             </div>
-    
+
             <div class="box">
                 <h3>Follow Us</h3>
                 <a href="https://www.facebook.com/harshchaudharynp" target="_blank"><i
@@ -263,14 +328,16 @@
                 <a href="https://www.linkedin.com/in/harsh-chaudhary-15763a150/" target="_blank"><i
                         class="fab fa-linkedin"></i>Linkedin</a>
             </div>
-    
+
         </section>
-    
+
         <div class="credit">&copy; copyright @
-            <?= date('Y'); ?> by <span>HARSH CHAUDHARY</span> | all rights reserved!
+            <?= date('Y'); ?> by <span>AKNL</span> | all rights reserved!
         </div>
-    
+
     </footer>
+    <!-- FOOTER END -->
+
 
 
 
@@ -286,6 +353,7 @@
 
     <script src="./Assets/js/script.js"></script>
 
+    <!-- SLIDER JS & RESPONSIVE-->
     <script>
 
         var swiper = new Swiper(".home-slider", {
@@ -341,6 +409,7 @@
         });
 
     </script>
+    <!-- SLIDER JS & RESPONSIVE END -->
 
 </body>
 
