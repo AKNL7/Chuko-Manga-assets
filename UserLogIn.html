@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- font awesome cdn lien  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file lien  -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <section class="form-container">
+
+        <form action="" method="post">
+            <h3>CONNECTEZ VOUS</h3>
+            <input type="email" name="email" required placeholder=" email" maxlength="50" class="box"
+                oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="pass" required placeholder="password" maxlength="20" class="box"
+                oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="submit" value="login now" class="btn" name="submit">
+           
+            <p>Pas encore de compte ? Inscrivez vous</p>
+            <a href="user_register.php" class="option-btn">Subscribe</a>
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="./Assets/js/script.js"></script>
+
+</body>
+
+</html>

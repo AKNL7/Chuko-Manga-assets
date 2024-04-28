@@ -614,6 +614,10 @@ section {
   margin-right: auto;
 }
 
+.form-container {
+  margin-top: 300px;
+}
+
 .form-container form {
   background-color: var(--white);
   padding: 2rem;
@@ -629,12 +633,13 @@ section {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
+  padding: 25px;
 }
 
 .form-container form p {
   font-size: 2rem;
   color: var(--light-color);
-  margin: 1.5rem 0;
+  margin: 4rem 0;
 }
 
 .form-container form .box {
@@ -646,6 +651,26 @@ section {
   width: 100%;
   border-radius: 0.5rem;
 }
+
+.form-container form select {
+  width: 100%;
+  padding: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+.form-container form input[type="file"] {
+  width: 100%;
+  padding: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+
 
 .about .row {
   display: flex;
@@ -837,6 +862,14 @@ section {
   color: var(--red);
 }
 
+.shopping-cart h3 {
+   margin-top: 40px;
+}
+
+.shopping-cart .box-container {
+   margin-top: 100px;
+}
+
 .cart-total {
   max-width: 50rem;
   margin: 0 auto;
@@ -858,9 +891,36 @@ section {
   color: var(--red);
 }
 
-.display-orders {
+.details_cart {
+  font-size: 1.6rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+.delivery-choice {
+    margin-top: 20px;
+}
+
+.delivery-choice label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.delivery-choice select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.display-orders  {
   text-align: center;
   padding-bottom: 0;
+  margin-top: 40px;
+ 
 }
 
 .display-orders p {
@@ -890,12 +950,16 @@ section {
   color: var(--red);
 }
 
+
+
+
 .checkout-orders form {
-  padding: 2rem;
+  padding: 4rem;
   border: var(--border);
   background-color: var(--white);
   box-shadow: var(--box-shadow);
   border-radius: 0.5rem;
+  margin-top: 60px;
 }
 
 .checkout-orders form h3 {
@@ -914,6 +978,7 @@ section {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .checkout-orders form .flex .inputBox {
@@ -936,6 +1001,12 @@ section {
   color: var(--light-color);
 }
 
+.checkout_orders-img img {
+   height: 20rem;
+   width: 100%;
+   object-fit: contain;
+   margin-bottom: 1rem;
+}
 .orders .box-container {
   display: flex;
   flex-wrap: wrap;

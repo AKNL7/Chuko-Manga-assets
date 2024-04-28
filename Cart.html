@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <section class="products shopping-cart">
+
+        <h3 class="heading">Votre panier</h3>
+
+        <div class="box-container">
+
+
+            <form action="" method="post" class="box">
+                <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
+                <a href="quick_view.php?pid=<?= $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
+                <img src="./Assets/images/9782344048078-001-T.jpeg" alt="">
+                <div class="name">
+                    Titre de l'annonce
+                </div>
+
+                <!-- <div class="price"> 6 €
+                </div> -->
+
+         
+                <div class="details_cart">
+                   
+                    <div class="product_state">
+                        <span>Etat : </span>
+                        <span>Neuf</span>
+                    </div>
+                    <div class="product_edition">
+                        <span>Edition : </span>
+                        <span>Kana</span>
+                    </div>
+                    <div class="product_seller">
+                        Vendeur : Nom Vendeur
+
+                    </div>
+                
+
+
+                    <div class="sub-total"> Sub Total : 6<span>€
+
+                        </span> 
+                    </div>
+
+                        <div class="delivery-choice">
+                            <label for="delivery-option">Choix de la livraison :</label>
+                            <select id="delivery-option" name="delivery-option">
+                                <option value="standard">Standard 0€</option>
+                                <option value="express">Express 4€</option>
+                                <!-- Add more delivery options as needed -->
+                            </select>
+                        </div>
+
+                    <input type="submit" value="delete item" onclick="return confirm('delete this from cart?');"
+                        class="delete-btn" name="delete">
+            </form>
+ <p class="empty">your cart is empty</p>
+   
+        </div>
+
+        <div class="cart-total">
+            <p>Total : <span>Nrs.
+                    Total
+                </span></p>
+            <a href="shop.php" class="option-btn">Continue Shopping.</a>
+            <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>"
+                onclick="return confirm('delete all from cart?');">Delete All Items ?</a>
+            <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Proceed to Checkout.</a>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./Assets/js/"></script>
+
+</body>
+
+</html>

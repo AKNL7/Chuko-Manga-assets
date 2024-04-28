@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <section class="checkout-orders">
+
+        <form action="" method="POST">
+
+            <h3>Votre commande</h3>
+
+            <div class="display-orders">
+     
+
+                <div class="checkout_orders-img">
+                    <img src="./Assets/images/9782382754665_1_75.jpg" alt="">
+                </div>
+                    <div class="details_cart">
+                    <div class="name">
+                        Titre de l'annonce
+                    </div>
+                        <div class="product_state">
+                            <span>Etat : </span>
+                            <span>Neuf</span>
+                        </div>
+                        <div class="product_edition">
+                            <span>Edition : </span>
+                            <span>Kana</span>
+                        </div>
+                      
+                  <span>  
+                    <div class="product_seller">
+                            Vendeur : Nom Vendeur
+                    
+                        </div>
+                        <div class="delivery">
+                            Livraison : Standard
+                        
+                        </div>
+                    </span>
+                
+               
+         <!-- <p class="empty">your cart is empty!</p> -->
+     
+                <input type="hidden" name="total_products" value="<?= $total_products; ?>">
+                <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
+                <div class="grand-total">Grand Total : <span>Nrs.
+                     
+                    </span></div>
+            </div>
+
+            <h3>Passez votre commande</h3>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>UserName</span>
+                    <input type="text" name="name" placeholder="Nom" class="box" maxlength="20" required>
+                </div>
+                <div class="inputBox">
+                    <span>Numero :</span>
+                    <input type="number" name="number" placeholder= "Number" class="box" min="0"
+                        max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+                </div>
+                <div class="inputBox">
+                    <span> Email :</span>
+                    <input type="email" name="email" placeholder="Mail" class="box" maxlength="50" required>
+                </div>
+                <div class="inputBox">
+                    <span>Payment :</span>
+                    <select name="method" class="box" required>
+                        <option value="credit card">Credit Card</option>
+                        <option value="paypal">Paypal</option>
+                    
+                        
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" name="flat" placeholder="Street" class="box" maxlength="50" required>
+                </div>
+                <div class="inputBox">
+                    <span>Complément d'Adresse :</span>
+                    <input type="text" name="street" placeholder="Complément" class="box" maxlength="50" required>
+                </div>
+                <!-- <div class="inputBox">
+                    <span>Departement :</span>
+                    <input type="text" name="city" placeholder="Kathmandu" class="box" maxlength="50" required>
+                </div> -->
+                <div class="inputBox">
+                    <span>Ville :</span>
+                    <input type="text" name="state" placeholder="City" class="box" maxlength="50" required>
+                </div>
+                <div class="inputBox">
+                    <span>Pays :</span>
+                    <input type="text" name="country" placeholder="Country" class="box" maxlength="50" required>
+                </div>
+                <div class="inputBox">
+                    <span>Code Postal :</span>
+                    <input type="number" min="0" name="pin_code" placeholder="e.g. 42000" min="0" max="999999"
+                        onkeypress="if(this.value.length == 6) return false;" class="box" required>
+                </div>
+            </div>
+
+            <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="Commander">
+
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <script src="./Assets/css/style.css"></script>
+
+</body>
+
+</html>
